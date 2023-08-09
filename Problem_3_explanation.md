@@ -1,0 +1,5 @@
+The space and time complexity of building the Huffman tree is O(n), both varying based on the number of unique characters.
+Similarly, the space and time complexity of the encoding table function are O(n) because it is limited by its inputs and can only be linear.
+The time complexity of the encoding and decoding functions are O(m) and O(m + n), respectively. Encoding takes O(m) time to calculate the length of the inputs (m). Similarly for decoding, it has an O(m) time complexity where m is the length of the encoded data, but also has to traverse the Huffman tree, making it O(m +n) where n is the total possible nodes.
+The space complexity of the encoding and decoding functions are O(m +n). Like before, both need to count the length of input data (m) and do this for each possible node (n).
+In this case, heapify is used to make a priority queue to repeatedly pop out the smallest elements of the tree. Defaultdict is also used to store the frequencies and input data easily.

@@ -1,0 +1,1 @@
+This will return the intersection and union of two given lists. This iterates through each given list of elements for both the union and intersection functions making both of them O(N) time complexity. The function also uses a set to store the unique and similar elements of each list, giving both the union and intersection methods a space complexity of O(N).
